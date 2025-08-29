@@ -1,70 +1,196 @@
-/* CSS document */
 @charset "UTF-8";
+/* CSS document */
+
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap);
 
 @font-face {
-    font-family: "Made Tommy Display";
-    src: url(fonts/Made\ Tommy/bold) format(oft);
+    font-family: "Monsterrat-Bbold", sans-serif;
+    src: url(fonts/Montserrat/Montserrat-Bold.ttf), format(truetype);
 }
 
 @font-face {
-    font-family: "Montserrat regular";
-    src: url(fonts/Montserrat/Montserrat-Regular.ttf) format(truetype);
-    font-weight: normal;
-    font-style: normal;
+    font-family: "Montserrat-regular", sans-serif;
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf), format(truetype);
 }
 
 @font-face {
-    font-family: "Montserrat bold";
-    src: url(fonts/Montserrat/Montserrat-Bold.ttf) format(truetype);
-    font-weight: bold;
-    font-style: normal;
+    font-family: "Montserrat-italic", sans-serif;
+    src: url(fonts/Montserrat/Montserrat-Italic.ttf), format(truetype);
 }
 
 @font-face {
-    font-family: "Montserrat italic";
-    src: url(fonts/Montserrat/Montserrat-Italic.ttf) format(truetype);
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Montserrat bold italic";
-    src: url(fonts/Montserrat/Montserrat-BoldItalic.ttf) format(truetype);
-    font-weight: bold;
-    font-style: italic;
+    font-family: "Montserrat-light", sans-serif;
+    src: url(fonts/Montserrat/Montserrat-Light.ttf), format(truetype);
 }
 
 * {
-    font-family: "Arimo", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-body {
-    background-color: rgb(255, 233, 206);
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    height: 800px;
+    background-color: #ffdbc5;
+    padding: 0%;
+}
+
+#flor-animada {
+    animation-name: girar;
+    animation-duration: 4s;
+    position: initial;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 200px;
+    height: 200px;
+    margin: -900px 90px 170px 120px;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transition: transform 0.3;
+    }
+}
+
+.girar {
+    animation: girar continuo 2s linear infinite;
 }
 
 h1 {
-    font-family: "Made Tommy Display", sans-serif;
-    color: rgb(6, 0, 192);
-    text-align: left;
-    font-size: 3.5rem;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 150px;
+    padding: 120px 0 0 350px;
+    color: #ff4375;
+    letter-spacing: 5px;
+    ;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Montserrat bold', sans-serif;
-    font-size: 1.5rem;
+#bajada {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 20px 0 0 350px;
+    color: #ff7e01;
+    letter-spacing: 5px;
+}
+
+body {
+    background-color: #ff4375;
+    ;
+    cursor: url(img/cursor.svg), auto;
+}
+
+li {
+    list-style: none;
+    font-family: "Monsterrat", sans-serif;
+    font-size: 15px;
+}
+
+h2, h3, h4, h5, h6, h7 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 2.5px
 }
 
 p {
-    font-family: 'Montserrat italic', sans serif;
-    font-size: 1rem;
+    font-family: "Monsterrat", sans-serif;
+    font-size: 1.5em;
+}
+
+#flex_conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: normal;
+
+}
+
+#flex_texto {
+    background-color: #ffb027;
+    width: 1500px;
+    height: 533px;
+    border-radius: 15px;
+    margin: 100px 50px 0 10px;
+    padding: 20px;
+}
+
+#foto_perfil {
+    border-radius: 15px;
+    margin: 100px 20px 0 50px;
+
+}
+
+#flex_extudios {
+    background-color: #ffdbc5;
+    width: 1167.5;
+    height: 250px;
+    border-radius: 15px;
+    margin: 25px 50px 0px 50px;
+    padding: 40px 40px 40px 40px;
+}
+
+#flex_experiencia {
+    background-color: #ffdbc5;
+    width: 623.75px;
+    height: 350px;
+    border-radius: 15px;
+    margin: 25px 50px 0px 50px;
+    padding: 40px 40px 40px 40px;
+}
+
+#flex_idiomas {
+    background-color: #ffdbc5;
+    width:623.75px;
+    height: 350px;
+    border-radius: 15px;
+    margin: 25px 50px 0px 50px;
+    padding: 40px 40px 40px 40px;
+}
+
+#flex_habilidades {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+    background-color: #ffb027;
+    align-items: center;
+    width: 830px;
+    height: 725px;
+    border-radius: 15px;
+    margin: -725px 0 0px 700px;
+}
+
+#flex_item {
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
 }
 
 footer {
-    font-family: 'Monsterrat regular', sans serif;
-    text-align: end;
+    color: #FF8FA7;
+    background-color: rgb(27, 0, 15);
+    display: flex;
+    padding: 40px 80px 30px 40px;
+    gap: 2em;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: flex-start;
 }
-

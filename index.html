@@ -3,82 +3,155 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Florcita.dg-TP1</title>
+    <title>DG | Florencia Cañedo</title>
     <link href="estilos.css" rel="stylesheet" type="text/css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header id="cabecera">
-        <h1>FLORENCIA CAÑEDO</h1>
-        <p>(casi) Diseñadora Gráfica</p>
+    <header>
+        <div id="titulo_principal">
+            <h1>FLORENCIA<br>CAÑEDO</h1>
+        </div>
+        <div>
+            <p id="bajada">
+                (casi) DISEÑADORA GRÁFICA E ILUSTRADORA
+            </p>
+            <img src="img/flor header.png" alt="flor-header" id="flor-animada" width="150px" height="150px">
+        </div>
     </header>
 
     <main>
-        <img src="img/Foto cv.jpg" alt="foto">
+        <section class="flexbox" id="flex_conteiner">
+            <article id="flex_foto">
+                <img src="img/Foto cv.jpg" alt="foto de CV" id="foto_perfil">
+            </article>
 
-        <h2>/SOBRE MÍ</h2>
-        <P>Hola, mi nombre es Florencia pero prefiero que me digan Flor, tengo 27 años y resido en Lanús. Estudiante
-            avanzada de Lic. en Diseño y Comunicación Visual, aunque también fui estudiante de Arquitectura hasta que
-            decidí tirarme de lleno hacia el diseño gráfico.</P>
+            <article id="flex_texto">
+                <h2>/SOBRE MÍ</h2>
+                <P>Hola, mi nombre es Florencia pero prefiero que me digan Flor, tengo 27 años y resido en Lanús.
+                    Estudiante
+                    avanzada de Lic. en Diseño y Comunicación Visual, aunque también fui estudiante de Arquitectura
+                    hasta
+                    que
+                    decidí tirarme de lleno hacia el diseño gráfico.</P>
 
-        <p>Tengo un problema (o virtud): me gusta hacer de todo un poco. Mi medio de expresión es el arte, en todas sus
-            formas. Me gusta pintar, dibujar, diseñar y todo lo que implique manualidades. Es mi motivación y forma de
-            comunicarle al mundo las cosas que tengo para decir, lo cual hace que sea muy detallista y creativa a la
-            hora de dejar volar mi imaginación.</p>
+                <p>Tengo un problema (o virtud): me gusta hacer de todo un poco. Mi medio de expresión es el arte, en
+                    todas
+                    sus
+                    formas. Me gusta pintar, dibujar, diseñar y todo lo que implique manualidades. Es mi motivación y
+                    forma
+                    de
+                    comunicarle al mundo las cosas que tengo para decir, lo cual hace que sea muy detallista y creativa
+                    a la
+                    hora de dejar volar mi imaginación.</p>
 
-        <p>Mi objetivo es crear diseños que aporten valor visual y funcionalidad, contribuyendo desde mis conocimientos
-            y creatividad.</P>
+                <p>Mi objetivo es crear diseños que aporten valor visual y funcionalidad, contribuyendo desde mis
+                    conocimientos
+                    y creatividad.</P>
+            </article>
+        </section>
 
-        <h3>/ESTUDIOS</h3>
-        <ul style="list-style: none; margin: 0; padding: 0">
-            <li>BACHILLER EN CIENCIAS SOCIALES</li>
-            <p>Centro Educativo Santa Clara de Asís (2010-2015)</p>
-            <li>ARQUITECTURA</li>
-            <p>Universidad Nacional de Avellaneda (2016-2020)</p>
-            <li>LIC. EN DISEÑO Y COMUNICACIÓN VISUAL</li>
-            <p>Universidad Nacional de Lanús (2022)</p>
-        </ul>
+        <section class="flexbox" id="flex_extudios">
+            <h3>/ESTUDIOS</h3>
+            <ol>
+                <li>BACHILLER EN CIENCIAS SOCIALES</li>
+                <p>Centro Educativo Santa Clara de Asís (2010-2015)</p>
+                <li>ARQUITECTURA</li>
+                <p>Universidad Nacional de Avellaneda (2016-2020)</p>
+                <li>LIC. EN DISEÑO Y COMUNICACIÓN VISUAL</li>
+                <p>Universidad Nacional de Lanús (2022)</p>
+            </ol>
+        </section>
 
-        <h4>/EXPERIENCIA</h4>
-        <ul style="list-style: none; margin: 0; padding: 0">
-            <li>Emprendimiento de artesanías</li>
-            <p>Diciembre2020 a la actualidad</p>
-            <li>Community Manager</li>
-            <p>2021 a la actualidad</p>
-            <li>LIC. EN DISEÑO Y COMUNICACIÓN VISUAL</li>
-            <p>2024 a la actualidad</p>
-        </ul>
+        <section class="flexbox">
+            <article id="flex_experiencia">
+                <h4>/EXPERIENCIA</h4>
+                <ul>
+                    <li>Emprendimiento de artesanías</li>
+                    <p>Diciembre 2020 a la actualidad</p>
+                    <li>Community Manager</li>
+                    <p>2021 a la actualidad</p>
+                </ul>
+            </article>
 
-        <h5>/CONOCIMIENTOS</h5>
-        <img src="img/iconos/Ai.png" alt="íconos">
-        <img src="img/iconos/AutoCAD.png" alt="íconos">
-        <img src="img/iconos/Figma.png" alt="íconos">
-        <img src="img/iconos/Id.png" alt="íconos">
-        <img src="img/iconos/Ps.png" alt="íconos">
-        <img src="img/iconos/Revit.png" alt="íconos">
+            <article id="flex_idiomas">
+                <h5>/IDIOMAS</h5>
+                <ul>
+                    <li>Español Nativo</li>
+                    <li>Inglés</li>
+                    <p>Escrito:Avanzado</p>
+                    <p>Oral:Intermedio</p>
+                </ul>
+            </article>
 
-        <h6>/IDIOMA</h6>
-        <ul style="list-style: none; margin: 0; padding: 0">
-            <li>Español Nativo</li>
-            <li>Inglés Intermedio</li>
-        </ul>
+            <div class="flexbox" id="flex_habilidades">
+                <section id="flex_item">
+                <h6>/HABILIDADES</h6>
+                <ul>
+                    <article>
+                        <img src="img/iconos/Ai.png" alt="íconos" width="150px">
+                        <p>Adobe Illustrator</p>
+                    </article>
 
-        <h6>/CONTACTO</h6>
-        <ul style="list-style: none; margin: 0; padding: 0">
-            <li>Mail</li>
-            <p>canedoflorencia@gmail.com</p>
-            <li>Celular</li>
-            <p>+54 11 2345-6789</p>
+                    <article>
+                        <img src="img/iconos/Ps.png" alt="íconos" width="150px">
+                        <p>Adobe Photoshop</p>
+                    </article>
+
+                    <article>
+                        <img src="img/iconos/Id.png" alt="íconos" width="150px">
+                        <p>Adobe InDesign</p>
+                    </article>
+
+                    <article>
+                        <img src="img/iconos/AutoCAD.png" alt="íconos" width="150px">
+                        <p>AutoCAD</p>
+                    </article>
+
+                    <article>
+                        <img src="img/iconos/Figma.png" alt="íconos" width="150px">
+                        <P>Figma</P>
+                    </article>
+
+                    <article>
+                    <img src="img/iconos/Revit.png" alt="íconos" width="150px">
+                    <P>Revit</P>
+                    </article>
+                </ul>
+                </section>
+            </div>
+        </section>
     </main>
 
-    <footer id="Contacto">
-        <ul>
-            <li>
-                <img src="img/iconos/Behance.png" alt="íconos">
-                <a href="https://www.behance.net/florenciacaedo1">Behance</a>
-            </li>
+    <footer class="flexbox" id="flex_contacto">
+        <h7>/CONTACTAME</h7>
+        <div class="bloque_contacto" id="flex_redes">
+            <ul>
+                <li>
+                    <a id="be" href="https://www.behance.net/florenciacaedo1">
+                        <img src="img/iconos/Behance.png" alt="link_behance">
+                    </a>
+                </li>
+                <a id="ig" href="https://www.instagram.com/florcanedoap/">
+                    <img src="img/iconos/Instagram.png" alt="link_ig">
+                </a>
+
+                <li>
+                    <a id="linkedin" href="https://www.linkedin.com/in/florencia-ca%C3%B1edo/">
+                        <img src="img/iconos/LinkedIn.png" alt="link_linkedin">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bloque_legal" id="legales">
+            <p>Todos los derechos reservados. Copyright © 2025</p>
+        </div>
     </footer>
 </body>
+
+</html>
