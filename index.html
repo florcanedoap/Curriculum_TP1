@@ -5,136 +5,119 @@
     <meta charset="UTF-8" />
     <title>DG | Florencia Cañedo</title>
     <link href="estilos.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
+    <link rel="icon" type="image/svg" href="img/flor_icon.svg" id="flor_icon">
 </head>
 
 <body>
     <header>
-        <div id="titulo_principal">
-            <h1>FLORENCIA<br>CAÑEDO</h1>
-        </div>
         <div>
-            <p id="bajada">
-                (casi) DISEÑADORA GRÁFICA E ILUSTRADORA
-            </p>
-            <img src="img/flor_header.png" alt="flor-header" id="flor-animada" width="150px" height="150px">
+            <ul id="flex_flor">
+                <li id="titulo_principal">
+                    <h1>FLORENCIA</h1>
+                    <h1>CAÑEDO</h1>
+                    <h2>(casi) DISEÑADORA GRÁFICA E ILUSTRADORA</h2>
+                </li>
+            </ul>
         </div>
+        <div id="flex-animada">
+            <img src="img/flor_header.png" alt="flor-header" id="flor-animada">
+        </div>
+
     </header>
 
-    <main>
+    <main >
         <section class="flexbox" id="flex_conteiner">
             <article id="flex_foto">
                 <img src="img/foto_cv.jpg" alt="foto de cv" id="foto_perfil">
             </article>
 
             <article id="flex_texto">
-                <h2>/SOBRE MÍ</h2>
-                <P>Hola, mi nombre es Florencia pero prefiero que me digan Flor, tengo 27 años y resido en Lanús.
-                    Estudiante
-                    avanzada de Lic. en Diseño y Comunicación Visual, aunque también fui estudiante de Arquitectura
-                    hasta
-                    que
-                    decidí tirarme de lleno hacia el diseño gráfico.</P>
+                <h3>/SOBRE MÍ</h3>
+                <P><span>Hola, mi nombre es Florencia pero prefiero que me digan Flor, tengo 27 años y resido en Lanús.
+                        Estudiante
+                        avanzada de Lic. en Diseño y Comunicación Visual, aunque también fui estudiante de Arquitectura
+                        hasta
+                        que
+                        decidí tirarme de lleno hacia el diseño gráfico.</span></P>
 
-                <p>Tengo un problema (o virtud): me gusta hacer de todo un poco. Mi medio de expresión es el arte, en
-                    todas
-                    sus
-                    formas. Me gusta pintar, dibujar, diseñar y todo lo que implique manualidades. Es mi motivación y
-                    forma
-                    de
-                    comunicarle al mundo las cosas que tengo para decir, lo cual hace que sea muy detallista y creativa
-                    a la
-                    hora de dejar volar mi imaginación.</p>
-
-                <p>Mi objetivo es crear diseños que aporten valor visual y funcionalidad, contribuyendo desde mis
-                    conocimientos
-                    y creatividad.</P>
+                <p><span>Tengo un problema (o virtud): me gusta hacer de todo un poco. Mi medio de expresión es el arte,
+                        en
+                        todas
+                        sus
+                        formas. Me gusta pintar, dibujar, diseñar y todo lo que implique manualidades. Es mi motivación
+                        y
+                        forma
+                        de
+                        comunicarle al mundo las cosas que tengo para decir, lo cual hace que sea muy detallista y
+                        creativa
+                        a la
+                        hora de dejar volar mi imaginación. Mi objetivo es crear diseños que aporten valor visual y
+                        funcionalidad, contribuyendo desde mis
+                        conocimientos
+                        y creatividad.</span></p>
             </article>
         </section>
+        <section id="flex_colum">
+        <section class="flexbox" id="flex_colum2">
+            <article id="flex_estudios">
+                <h4>/ESTUDIOS</h4>
+                <ol>
+                    <li>BACHILLER EN CIENCIAS SOCIALES
+                        <p>Centro Educativo Santa Clara de Asís (2010-2015)</p>
+                    </li>
+                    <li>ARQUITECTURA
+                        <p>Universidad Nacional de Avellaneda (2016-2020)</p>
+                    </li>
+                    <li>LIC. EN DISEÑO Y COMUNICACIÓN VISUAL
+                        <p>Universidad Nacional de Lanús (2022)</p>
+                    </li>
+                </ol>
+            </article>
 
-        <section class="flexbox" id="flex_extudios">
-            <h3>/ESTUDIOS</h3>
-            <ol>
-                <li>BACHILLER EN CIENCIAS SOCIALES
-                    <p>Centro Educativo Santa Clara de Asís (2010-2015)</p>
-                </li>
-                <li>ARQUITECTURA
-                    <p>Universidad Nacional de Avellaneda (2016-2020)</p>
-                </li>
-                <li>LIC. EN DISEÑO Y COMUNICACIÓN VISUAL
-                    <p>Universidad Nacional de Lanús (2022)</p>
-                </li>
-            </ol>
-        </section>
-
-        <section class="flexbox">
             <article id="flex_experiencia">
-                <h4>/EXPERIENCIA</h4>
+                <h5>/EXPERIENCIA</h5>
                 <ul>
-                    <li>Emprendimiento de artesanías
+                    <li>EMPRENDIMIENTO DE ARTESANÍAS
                         <p>Diciembre 2020 a la actualidad</p>
                     </li>
-                    <li>Community Manager
+                    <li>COMMUNITY MANAGER
                         <p>2021 a la actualidad</p>
                     </li>
                 </ul>
             </article>
 
             <article id="flex_idiomas">
-                <h5>/IDIOMAS</h5>
+                <h6>/IDIOMAS</h6>
                 <ul>
-                    <li>Español Nativo</li>
-                    <li>Inglés
-                        <p>Escrito:Avanzado</p>
-                        <p>Oral:Intermedio</p>
+                    <li>ESPAÑOL NATIVO</li>
+                    <li>INGLÉS
+                        <p><span>Escrito:Avanzado</span></p>
+                        <p><span>Oral:Intermedio</span></p>
                     </li>
                 </ul>
             </article>
-
-            <div class="flexbox" id="flex_habilidades">
-                <section id="flex_item">
-                    <h6>/HABILIDADES</h6>
-                    <ul>
-                        <article>
-                            <img src="img/iconos/ai.png" alt="íconos" width="150px">
-                            <p>Adobe Illustrator</p>
-                        </article>
-
-                        <article>
-                            <img src="img/iconos/ps.png" alt="íconos" width="150px">
-                            <p>Adobe Photoshop</p>
-                        </article>
-
-                        <article>
-                            <img src="img/iconos/id.png" alt="íconos" width="150px">
-                            <p>Adobe InDesign</p>
-                        </article>
-
-                        <article>
-                            <img src="img/iconos/autocad.png" alt="íconos" width="150px">
-                            <p>AutoCAD</p>
-                        </article>
-
-                        <article>
-                            <img src="img/iconos/figma.png" alt="íconos" width="150px">
-                            <P>Figma</P>
-                        </article>
-
-                        <article>
-                            <img src="img/iconos/revit.png" alt="íconos" width="150px">
-                            <P>Revit</P>
-                        </article>
-                    </ul>
-                </section>
-            </div>
+        </section>
+        <section id="flex_habilidades">
+            <h7>/HABILIDADES</h7>
+            <img src="img/iconos/ai.png" alt="iconos" width="130px">
+            <p>Adobe Illustrator</p>
+            <img src="img/iconos/ps.png" alt="iconos" width="130px">
+            <p>Adobe Photoshop</p>
+            <img src="img/iconos/id.png" alt="iconos" width="130px">
+            <p>Adobe InDesign</p>
+            <img src="img/iconos/autocad.png" alt="iconos" width="150px">
+            <p>AutoCAD</p>
+            <img src="img/iconos/figma.png" alt="iconos" width="130px">
+            <P>Figma</P>
+            <img src="img/iconos/revit.png" alt="iconos" width="130px">
+            <P>Revit</P>
+            </article>
+        </section>
         </section>
     </main>
 
     <footer class="flexbox" id="flex_contacto">
-        <h7>/CONTACTAME</h7>
+        <h8>/CONTACTAME</h8>
         <div class="bloque_contacto" id="flex_redes">
             <ul>
                 <li>
