@@ -84,7 +84,6 @@ h1 {
     position: initial;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    margin: 0 90px 50px;
     width: 201px;
     height: 201px
 }
@@ -118,21 +117,22 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 50px;
-    gap: 25px;    
+    margin: 30px;
+    gap: 13px;    
+    justify-content: center;
 }
 
 #foto_cv {
     border-radius: 15px;
-    width: 400px;
-    height: 533px;
+    width: 310px;
+    height: 380px;
 }
 
 #sobre_mi {
 
     background-color: #ffb027;
-    width: 930px;
-    height: 533px;
+    width: 660px;
+    height: 380px;
     border-radius: 15px;
     padding: 30px;
     
@@ -140,34 +140,34 @@ main {
 
 #datos_personales {
     background-color: #ed1e79;
-    width: 440px;
-    height: 533px;
+    width: 310px;
+    height: 380px;
     border-radius: 15px;
-    padding: 30px;
+    padding: 30px 20px 0;
 }
 
 h2 {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #ffdbc5;
     letter-spacing: 5px;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
  
 }
 
 ol {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #ffdbc5;
 }
 #datos {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     color: #ffdbc5;
-    line-height: 56px;
+    line-height: 35px;
 }
 
 
@@ -175,16 +175,16 @@ ol {
 h3 {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #ff0062;
     letter-spacing: 5px;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
 }
 
 span {
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
     color: #ff0062;
     font-weight: 400;
 }
