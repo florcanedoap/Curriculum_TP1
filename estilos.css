@@ -116,7 +116,8 @@ h1 {
     margin: 25px;
     display: flex;
     justify-content: center;
-   
+    flex-wrap: wrap;
+    gap: 2em;
 }
 
 #foto_cv {
