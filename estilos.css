@@ -14,7 +14,8 @@
     src: url(fonts/Display/5thAvenue.ttf), format(truetype);
 }
 
-/* Acá arranca a definirse el html */
+/* Acá arranca a definirse el html en general */
+
 * {
     margin: 0;
     padding: 0;
@@ -22,31 +23,47 @@
     list-style: none;
 }
 
-/* Se define la tipografia a utilizar en toda la página*/
+html {
+    scroll-behavior:smooth;
+}
+
+
+/* Se define el body la tipografia a utilizar en toda la página*/
+
 body {
     font-family: "IBM Plex Sans", sans-serif;
     background-color: #ff6e9b;
     cursor: url(img/cursor.svg), auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flexbox;
  }
 
+
 /* Aplicando css en el header, empezando por el nav*/
+
+header {
+    background-color: #ffdbc5;
+    height: 100vh;
+    
+}
 
 .botonera {
     display: flex;
     flex-wrap: wrap;
-    background-color: #ffb027;
-    height: 9vh;
+    height: 8vh;
     align-items: center;
     justify-content: space-evenly;
-    max-width: 1920px;
+    
 }
 
 .botones {
     font-size: 1.3rem;
     text-decoration: none;
-    color: #ed1e79;
+    color: #ff6e9b;
     font-weight: 700;
-    border: 3px solid #ed1e79;
+    border: 3px solid #ff6e9b;;
     border-radius: 100px;
     padding: 15px 15px;
     height: 5vh;
@@ -54,25 +71,22 @@ body {
     align-items: center;
 }
 
-/* Inicio de la presentación */
+/* Inicio */
 
 .flex_inicio {
-    
-    background-color: #ffdbc5;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
     justify-content: center;
-    
-    
+    height:900px ;
 }
 
 h1 {
     font-family: "Display";
-    color: #ff6e9b;
-    font-size: 8rem;
+    color: #fc2683;
+    font-size: 9rem;
     line-height: 150px;
     letter-spacing: 5px;
 }
@@ -84,6 +98,7 @@ h1 {
     color: #ff7e01;
     letter-spacing: 5px;
     line-height: 100px;
+    margin: 25px 0;
 }
 
 #flor_animada {
@@ -110,12 +125,17 @@ h1 {
     animation: girar continuo 2s linear infinite;
 }
 
-/* Inicio primer bloque de datos */
+/* Inicio del body, primer bloque de datos */
 
 .flex_presentacion {
-    margin: 25px;
+    margin: 50px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
 }
 
 #foto_cv {
@@ -128,10 +148,11 @@ h1 {
     flex-direction: column;
     flex-wrap: wrap;
     border-radius: 15px;
-    background-color: #ed1e79;
-    height: 400px;
+    background-color: #fc2683;
+    height: 533px;
+    width: 440px;
     line-height: 30px;
-    padding: 15px 15px 0;
+    padding:30px;
 
 }
 
@@ -164,8 +185,8 @@ li {
     flex-wrap: wrap;
     border-radius: 15px;
     background-color: #ffbe4f;
-    height: 400px;
-    width: 600px;
+    height: 533px;
+    width: 700px;
     line-height: 30px;
     padding: 0 25px 0 25px;
 }
@@ -186,3 +207,5 @@ span {
     color: #ff0062;
     font-weight: 500;
 }
+
+/* bloque verticial */
