@@ -12,10 +12,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
-    
+    font-family: "IBM Plex Sans", sans-serif;
     cursor: url(img/cursor.svg), auto;
 
 }
@@ -27,16 +28,14 @@ body {
     height: 12vh;
     align-items: center;
     justify-content: space-evenly;
-    
 }
 
 .botones {
     font-size: 1.3rem;
     text-decoration: none;
     color: #ed1e79;
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    border: 3.5px solid #ed1e79;
+    border: 3px solid #ed1e79;
     border-radius: 100px;
     padding: 15px 15px;
     height: 1px;
@@ -45,8 +44,10 @@ body {
 }
 
 .flex_inicio {
-    height: 100vh;
+    height: 720px;
     background-color: #ffdbc5;
+    padding: 0%;
+    margin: 0%;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -70,7 +71,6 @@ h1 {
 }
 
 #bajada {
-    font-family: "IBM Plex Sans", sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 1.5rem;
@@ -104,10 +104,6 @@ h1 {
     animation: girar continuo 2s linear infinite;
 }
 
-li {
-    list-style: none;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -119,39 +115,33 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     margin: 50px 50px 0;
-    gap: 25px;
-    
-    
-
+    justify-content: space-between;
 }
 
 #foto_cv {
     border-radius: 15px;
-    width: 285px;
-    height: 380px;
+    width: 400px;
+    height: 533px;
 }
 
 #sobre_mi {
-    background-color: #ffbc49;
-    width: 930px;
-    height: 533px;
+    background-color: #ffbe4f;
     border-radius: 15px;
     padding: 30px;
-    
+    width: 550px;
+    height: 533px;
 }
 
 
 #datos_personales {
     background-color: #ed1e79;
-    width: 440px/2;
-    height: 533px/2;
+    width: 440px;
+    height: 533px;
     border-radius: 15px;
     padding: 30px;
 }
 
-
 h2 {
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 700;
     font-size: 3rem;
     color: #ffdbc5;
@@ -160,23 +150,23 @@ h2 {
 
 }
 
-ol {
-    font-family: "IBM Plex Sans", sans-serif;
+li {
+
     font-weight: 700;
     font-size: 2rem;
     color: #ffdbc5;
 }
 
 #datos {
-    font-family: "IBM Plex Sans", sans-serif;
+
     font-weight: 400;
     font-size: 1.8rem;
     color: #ffdbc5;
     line-height: 56px;
 }
 
-h3, h4 {
-    font-family: "IBM Plex Sans", sans-serif;
+h3,
+h4 {
     font-weight: 700;
     font-size: 3rem;
     color: #ff0062;
@@ -185,36 +175,114 @@ h3, h4 {
 }
 
 span {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 2.7rem;
     color: #ff0062;
     font-weight: 500;
 }
 
-.columnas {
+.flex_col1 {
     display: flex;
     flex-direction: column;
 }
 
-#flex_izq {
+.flex_izq {
     display: flex;
     flex-direction: column;
     background-color: #ffdbc5;
-    width: 700px;
-    height: 400px;
+    width: 650px;
     border-radius: 15px;
     margin: 25px 0 0 50px;
     padding: 30px;
 }
 
-.datos_estudios {
-        color:#ff0062;
+.flex_izq2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffdbc5;
+    width: 650px;
+    border-radius: 15px;
+    margin: 25px 0 0 50px;
+    padding: 30px;
 }
 
-#estudios {
-    font-family: "IBM Plex Sans", sans-serif;
+.flex_izq3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffdbc5;
+    width: 650px;
+    border-radius: 15px;
+    margin: 25px 0 0 50px;
+    padding: 30px;
+}
+
+.datos {
+    color: #ff0062;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-top: 15px;
+}
+
+#datos_bajada {
     font-weight: 400;
     font-size: 1.5rem;
     color: #ff0062;
+    margin: 10px 0 10px 0;
+}
+
+.flex_habilidades {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffb027;
+    width: 795px;
+    height: 600px;
+    border-radius: 15px;
+    margin: 25px 0 0 30px;
+    padding: 20px;
+    justify-content: space-between;
+    align-content: normal;
+    align-items: stretch;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+
+#flex_color2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #08002d;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 20px;
+    width: 795px;
+    height: 420px;
+    padding: 80px;
+}
+
+#flex_color1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #08002d;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 20px;
+    width: 795px;
+    height: 420px;
+    padding: 80px;
+}
+
+#flex_iconredes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex_info {
+    display: flex;
+    flex-direction: row;
 }

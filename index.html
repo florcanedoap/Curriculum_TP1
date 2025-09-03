@@ -19,7 +19,7 @@
     </header>
 
     <main>
-        <section class="flex_inicio">
+        <div class="flex_inicio">
             <article id="titulo_principal">
                 <ul>
                     <li>
@@ -30,59 +30,118 @@
                 </ul>
             </article>
 
-            <div id="flex_animada">
-                <img src="img/flor_header.png" alt="flor-header" id="flor-animada">
-            </div>
-        </section>
+            <img src="img/flor_header.png" alt="flor-header" id="flor-animada">
+        </div>
 
-        <section class="flex_presentacion">
-            <div>
+        <div class="flex_presentacion">
+            <section>
                 <img src="img/foto_cv.jpg" alt="foto de cv" id="foto_cv">
-                </article>
-            </div>
+            </section>
 
             <article id="datos_personales">
                 <h2>/DATOS</h2>
                 <ul>
-                    <ol>EDAD</ol>
+                    <li>EDAD</li>
                     <p id="datos">27 años</p>
-                    <ol>TELÉFONO</ol>
+                    <li>TELÉFONO</li>
                     <p id="datos">+54 11 1234 5678</p>
-                    <ol>MAIL</ol>
+                    <li>MAIL</li>
                     <p id="datos">canedoflorencia@gmail.com</p>
-                    <ol>ZONA DE RESIDENCIA</ol>
+                    <li>ZONA DE RESIDENCIA</li>
                     <p id="datos">Lanús, Buenos Aires</p>
                 </ul>
             </article>
 
             <article id="sobre_mi">
                 <h3>/SOBRE MÍ</h3>
-                <p><span>Hola, me llamo Florencia pero prefiero que me digan Flor. Soy estudiante avanzada de Lic. en
-                        Diseño y Comunicación Visual, mi objetivo es crear diseños que aporten valor visual y funcionalidad.</span></P>
-
-                <p><span>Tengo un problema (o virtud): me gusta hacer de todo un poco. Mi medio de expresión es el arte,
-                        en todas sus formas. Es
-                        mi motivación y forma de comunicarle al mundo las cosas que tengo para decir, lo cual hace que
-                        sea muy detallista a la hora de dejar volar mi imaginación.</span></p>
+                <p><span>¡Hola! Soy Flor, estudiante avanzada de la carrerra Lic. Diseño y Comunicación Visual, entre
+                        muchas cosas más. Me apasiona crear propuestas visuales con valor estético y funcional,
+                        explorando el arte en todas sus formas para comunicar ideas de manera creativa.</span></P>
             </article>
-        </section>
 
-        <section class="columnas">
-            <div id="flex_izq">
-                <article>
+        </div>
+
+        <div class="flex_info">
+            <section class="flex_col">
+                <article class="flex_izq">
                     <h4>/ESTUDIOS</h4>
                     <ol>
-                        <li class="datos_estudios">BACHILLER EN CIENCIAS SOCIALES</li>
-                            <p id="estudios">Centro Educativo Santa Clara de Asís (2010-2015)</p>
-                        
-                        <li class="datos_estudios">ARQUITECTURA</li>
-                            <p id="estudios"s>Universidad Nacional de Avellaneda (2016-2020)</p>
-                        
-                        <li class="datos_estudios">LIC. EN DISEÑO Y COMUNICACIÓN VISUAL</li>
-                            <p id="estudios">Universidad Nacional de Lanús (2022)</p>
-                        
+                        <li class="datos">BACHILLER EN CIENCIAS SOCIALES</li>
+                        <p id="datos_bajada">Centro Educativo Santa Clara de Asís (2010-2015)</p>
+
+                        <li class="datos">ARQUITECTURA</li>
+                        <p id="datos_bajada">Universidad Nacional de Avellaneda (2016-2020)</p>
+
+                        <li class="datos">LIC. EN DISEÑO Y COMUNICACIÓN VISUAL</li>
+                        <p id="datos_bajada">Universidad Nacional de Lanús (2022)</p>
                     </ol>
                 </article>
 
-        </section>
+                <article class="flex_izq2">
+                    <h4>/EXPERIENCIA</h4>
+                    <ol>
+                        <li class="datos">EMPRENDIMIENTO DE ARTESANÍAS</li>
+                        <p id="datos_bajada">Diciembre 2020 a la actualidad</p>
+
+                        <li class="datos">COMMUNITY MANAGER</li>
+                        <p id="datos_bajada">2021 a la actualidad</p>
+
+                    </ol>
+                </article>
+
+                <article class="flex_izq3">
+                    <h4>/IDIOMAS</h4>
+                    <ul>
+                        <li class="datos">ESPAÑOL NATIVO</li>
+                        <li class="datos">INGLÉS</li>
+                        <p id="datos_bajada">Escrito:Avanzado</span></p>
+                        <p id="datos_bajada">Oral:Intermedio</p>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="flex_col">
+                <section id="flex_color1">
+                    <h4>/HABILIDADES</h4>
+                    <article id="flex_hab1">
+                        <img src="img/iconos/ai.png" alt="iconos" width="130px">
+
+                        <img src="img/iconos/ps.png" alt="iconos" width="130px">
+
+                        <img src="img/iconos/id.png" alt="iconos" width="130px">
+                    </article>
+
+                    <article id="flex_hab2">
+                        <img src="img/iconos/autocad.png" alt="iconos" width="150px">
+
+                        <img src="img/iconos/figma.png" alt="iconos" width="130px">
+
+                        <img src="img/iconos/revit.png" alt="iconos" width="130px">
+                    </article>
+                </section>
+
+                <section class="flex_colum" id="flex_color2">
+                    <h4>/CONTACTAME</h4>
+                    <ul id="flex_iconredes">
+                        <li>
+                            <a id="be" href="https://www.behance.net/florenciacaedo1">
+                                <img src="img/iconos/behance.png" alt="link_behance">
+                            </a>
+                        </li>
+                        <a id="ig" href="https://www.instagram.com/florcanedoap/">
+                            <img src="img/iconos/instagram.png" alt="link_ig">
+                        </a>
+
+                        <li>
+                            <a id="linkedin" href="https://www.linkedin.com/in/florencia-ca%C3%B1edo/">
+                                <img src="img/iconos/linkedin.png" alt="link_linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+        </div>
+
+
+
+
     </main>
