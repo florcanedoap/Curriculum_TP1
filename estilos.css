@@ -35,7 +35,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     background-color: #ffb027;
-    height: 8vh;
+    height: 9vh;
     align-items: center;
     justify-content: space-evenly;
     max-width: 1920px;
@@ -116,7 +116,6 @@ h1 {
     margin: 25px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 #foto_cv {
