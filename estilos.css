@@ -15,7 +15,6 @@
 }
 
 /* Acá arranca a definirse el html en general */
-
 * {
     margin: 0;
     padding: 0;
@@ -24,29 +23,24 @@
 }
 
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 
 /* Se define el body la tipografia a utilizar en toda la página*/
-
 body {
     font-family: "IBM Plex Sans", sans-serif;
     background-color: #ff6e9b;
     cursor: url(img/cursor.svg), auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: flexbox;
- }
+}
+
+
 
 
 /* Aplicando css en el header, empezando por el nav*/
-
 header {
     background-color: #ffdbc5;
     height: 100vh;
-    
 }
 
 .botonera {
@@ -55,7 +49,6 @@ header {
     height: 8vh;
     align-items: center;
     justify-content: space-evenly;
-    
 }
 
 .botones {
@@ -63,7 +56,8 @@ header {
     text-decoration: none;
     color: #ff6e9b;
     font-weight: 700;
-    border: 3px solid #ff6e9b;;
+    border: 3px solid #ff6e9b;
+    ;
     border-radius: 100px;
     padding: 15px 15px;
     height: 5vh;
@@ -71,8 +65,16 @@ header {
     align-items: center;
 }
 
-/* Inicio */
+/* se agrupan todas las cajas del main usando flexbox */
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 
+/* Inicio */
 .flex_inicio {
     display: flex;
     flex-direction: row-reverse;
@@ -80,7 +82,7 @@ header {
     align-content: center;
     align-items: center;
     justify-content: center;
-    height:900px ;
+    height: 900px;
 }
 
 h1 {
@@ -126,9 +128,8 @@ h1 {
 }
 
 /* Inicio del body, primer bloque de datos */
-
 .flex_presentacion {
-    margin: 50px;
+    margin: 50px 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,8 +153,7 @@ h1 {
     height: 533px;
     width: 440px;
     line-height: 30px;
-    padding:30px;
-
+    padding: 30px;
 }
 
 h3 {
@@ -169,7 +169,6 @@ li {
     font-weight: 700;
     font-size: 1.5rem;
     color: #ffdbc5;
-
 }
 
 .datos {
@@ -197,15 +196,159 @@ h2 {
     font-size: 2.5rem;
     letter-spacing: 5px;
     line-height: 30px;
-    margin: 25px 0 15px 0;
+    margin: 25px 0 5px 0;
+    padding: 25px 25px 0;
 }
 
 
-span {
+p {
     font-size: 1.9rem;
     font-family: "Montserrat", sans-serif;
     color: #ff0062;
     font-weight: 500;
 }
 
-/* bloque verticial */
+/* bloque izquierda y derecha aplicando flexbox */
+.flex_info {
+    display: flex;
+    justify-content: center;
+}
+
+.columna_izq {
+    display: flex;
+    flex-direction: column;
+}
+
+/* bloque vertical izquierda */
+.cajas {
+    display: flex;
+    background-color: #ffdbc5;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-right: 25px;
+    border-radius: 15px;
+    padding: 25px;
+    width: 700px;
+}
+
+#titulo_mag {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #fc2683;
+    letter-spacing: 5px;
+    line-height: 30px;
+    margin: 0 0 10px 0;
+}
+
+#datos_columna {
+    color: #fc2683;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+#datos_bajada {
+    font-weight: normal;
+    font-size: 1.3rem;
+    color: #ff0062;
+    margin: 0 0 10px 0;
+    line-height: 205x;
+}
+
+/* bloque vertical derecha */
+.flex_der {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: column;
+    background-color: #fc2683;
+    height: 520px;
+    border-radius: 15px;
+    padding: 20px;
+    justify-content: center;
+    align-content: normal;
+    align-items: stretch;
+    margin: 25px 0 25px;
+}
+
+#titulo_hab {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #ffdbc5;
+    letter-spacing: 5px;
+    padding: 25px 25px 0;
+    margin-bottom: 15px;
+}
+
+.flex_hab {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0 60px 0;
+}
+
+.redes {
+    background-color: #ffb027;
+    border-radius: 15px;
+    padding: 20px;
+    width: 865px;
+    height: 285px;
+}
+
+#titulo_redes {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fc2683;
+    letter-spacing: 5px;
+    padding: 20px 20px 0;
+    margin-bottom: 15px;
+}
+
+#flex_redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 35px;
+}
+
+/* footer */
+.caja_footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffb027;
+    height: 53px;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+
+h4{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ffdbc5;
+    letter-spacing: 5px;
+    margin: 10px 0 10px 0;
+    
+   
+}
+
+
+.flex_playlist {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#datos_footer {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
