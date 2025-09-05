@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <header>
         <nav class="botonera">
             <a class="botones" href="#">INICIO</a>
@@ -16,6 +17,7 @@
             <a class="botones" href="#">PORTFOLIO</a>
         </nav>
 
+        <!--PRESENTACIÓN E INICIO-->
         <div class="flex_inicio">
             <article>
                 <h1>FLORENCIA</h1>
@@ -26,10 +28,12 @@
         </div>
     </header>
 
+    <!--MAIN-->
     <main>
+        <!--PRIMER SECCIÓN-->
         <section class="flex_presentacion">
-                <img src="img/foto_cv.jpg" alt="foto de cv" width=400 height=533 id="foto_cv">
-            
+            <img src="img/foto_cv.jpg" alt="foto de cv" width=400 height=533 id="foto_cv">
+
             <div class="flex_datos">
                 <h3>/DATOS</h3>
                 <ul>
@@ -56,10 +60,11 @@
             </div>
         </section>
 
+        <!--SEGUNDA SECCIÓN-->
+        <!--Sección columna izquierda-->
         <section class="flex_info">
             <div class="columna" id="columna_izq">
-                <section class="cajas">
-                    <article>
+                    <article class="cajas">
                         <h3 id="titulo_mag">/ESTUDIOS</h3>
                         <ol>
                             <li class="titulo_dato" id="datos_columna">BACHILLER EN CIENCIAS SOCIALES</li>
@@ -72,55 +77,53 @@
                             <p id="datos_bajada">Universidad Nacional de Lanús (2022)</p>
                         </ol>
                     </article>
-                </section>
 
+                    <article class="cajas">
+                        <h3 id="titulo_mag">/EXPERIENCIA</h3>
+                        <ol>
+                            <li class="titulo_dato" id="datos_columna">EMPRENDIMIENTO DE ARTESANÍAS</li>
+                            <p id="datos_bajada">Diciembre 2020 a la actualidad</p>
 
-                <article class="cajas">
-                    <h3 id="titulo_mag">/EXPERIENCIA</h3>
-                    <ol>
-                        <li class="titulo_dato" id="datos_columna">EMPRENDIMIENTO DE ARTESANÍAS</li>
-                        <p id="datos_bajada">Diciembre 2020 a la actualidad</p>
+                            <li class="titulo_dato" id="datos_columna">COMMUNITY MANAGER</li>
+                            <p id="datos_bajada">2021 a la actualidad</p>
 
-                        <li class="titulo_dato" id="datos_columna">COMMUNITY MANAGER</li>
-                        <p id="datos_bajada">2021 a la actualidad</p>
+                            <li class="titulo_dato" id="datos_columna">DISEÑADORA FREELANCE</li>
+                            <p id="datos_bajada">2024 a la actualidad</p>
+                        </ol>
+                    </article>
 
-                        <li class="titulo_dato" id="datos_columna">DISEÑADORA FREELANCE</li>
-                        <p id="datos_bajada">2024 a la actualidad</p>
-                    </ol>
-                </article>
+                    <article class="cajas">
+                        <h3 id="titulo_mag">/IDIOMAS</h3>
+                        <ul>
+                            <li class="titulo_dato" id="datos_columna">ESPAÑOL NATIVO</li>
 
-
-                <article class="cajas">
-                    <h3 id="titulo_mag">/IDIOMAS</h3>
-                    <ul>
-                        <li class="titulo_dato" id="datos_columna">ESPAÑOL NATIVO</li>
-
-                        <li class="titulo_dato" id="datos_columna">INGLÉS INTERMEDIO</li>
-                    </ul>
-                </article>
+                            <li class="titulo_dato" id="datos_columna">INGLÉS INTERMEDIO</li>
+                        </ul>
+                    </article>
             </div>
 
+            <!--Sección columna derecha-->
             <div class="columna" id="flex_der">
-                <article class="iconos">
+                <section class="iconos">
                     <h2 id="titulo_hab">/HABILIDADES</h2>
-                    <section class="flex_hab">
+                    <article class="flex_hab">
                         <img src="img/habilidades/illustrator.svg" alt="iconos" width="150">
 
                         <img src="img/habilidades/photoshop.svg" alt="iconos" width="150">
 
                         <img src="img/habilidades/indesign.svg" alt="iconos" width="150">
-                    </section>
+                    </article>
 
-                    <section class="flex_hab">
+                    <article class="flex_hab">
                         <img src="img/habilidades/autocad.svg" alt="iconos" width="150">
 
                         <img src="img/habilidades/revit.svg" alt="iconos" width="150">
 
                         <img src="img/habilidades/figma.svg" alt="iconos" width="150">
-                    </section>
-                </article>
+                    </article>
+                </section>
 
-                <div class="redes">
+                <section class="redes">
                     <h2 id="titulo_redes">/TRABAJEMOS JUNTOS</h2>
                     <article id="flex_redes">
                         <a id="be" href="https://www.behance.net/florenciacaedo1">
@@ -136,19 +139,22 @@
                             <img src="img/redes/linkedin.svg" alt="link_linkedin" width="95">
                         </a>
                     </article>
-                </div>
+                </section>
+                
+            </div>
         </section>
     </main>
 
+    <!--FOOTER-->
     <footer class="caja_footer">
-            <p id="datos_footer">Copyright © 2025</p>
+        <p id="datos_footer">Copyright © 2025</p>
 
-            <p id="datos_footer">Todos los derechos reservados.</p>
+        <p id="datos_footer">Todos los derechos reservados.</p>
 
-        <div class="flex_playlist">
-            <h4>/LO QUE SUENA</h4>
-            <a id="playlist" href="https://open.spotify.com/playlist/3SliIWgm03JFsXBj64KvSb?si=5c3f1cfc9d864888">
-                <img src="img/spotify.svg" alt="link_spotify" width="35">
+        <div >
+            <a class="flex_playlist" id="playlist" href="https://open.spotify.com/playlist/3SliIWgm03JFsXBj64KvSb?si=5c3f1cfc9d864888">
+                <h4>/LO QUE SUENA</h4>
+                <img src="img/spotify.svg" alt="link_spotify" width="25">
             </a>
         </div>
     </footer>
